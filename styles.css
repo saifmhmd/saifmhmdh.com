@@ -234,8 +234,7 @@ nav {
 }
 
 .movie-image {
-    /* height: 55px; */
-    height: clamp(3rem, 4vw, 4rem);
+    height: clamp(2.7rem, 4vw, 4rem);
     border-radius: 10px;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
 }
@@ -308,7 +307,7 @@ nav {
 
 .icons {
     /* height: 40px; */
-    height: clamp(20px, 3vh, 100px);
+    height: 3vh;
     width: auto;
 }
 
@@ -330,7 +329,11 @@ footer {
     padding-right: 2px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 430px) {
+    .wraper {
+        height: auto;
+        margin: 30px 8%;
+    }
     .mobile-banner,
     .project-container,
     .blog-container,
@@ -345,9 +348,6 @@ footer {
     }
     .hire-me-btn {
         border-radius: 7px;
-    }
-    .wraper {
-        height:160vh;
     }
     .grid-container {
         grid-template-columns: none;
@@ -403,8 +403,18 @@ footer {
     .tools-container {
         height: 50px;
     }
+    .icons {
+        height: 17px;
+    }
     .copyright-para {
         font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 1024px) and (min-width: 430px) {
+    .wraper {
+        justify-content: center;
+        margin: 0 8%;
     }
 }
 
