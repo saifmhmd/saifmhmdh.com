@@ -13,7 +13,7 @@ containers.forEach((container, index) => {
     });
 });
 
-const mobileAbout = document.querySelector(".mobile-about");
+const mobileAbout = document.getElementsByClassName(".mobile-about");
 
 mobileAbout.addEventListener("click", () => {
     window.location.href = links[2];
