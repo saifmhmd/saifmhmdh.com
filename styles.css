@@ -45,12 +45,11 @@ nav {
 
 .logo {
     height: 50px;
-    height: clamp(2rem, 3.8vw, 4rem);
+    height: clamp(2rem, 3.8vw, 5rem);
 }
 
 .hire-me-btn {
-    font-size: 16px;
-    font-size: clamp(0.7rem, 1.1vw, 2rem);
+    font-size: clamp(0.7rem, 1.2vw, 2.5rem);
     background-color: #0B2545;
     color: #f5f5f5;
     padding: 10px 15px;
@@ -197,7 +196,7 @@ nav {
     background-color: #134074;
     border-radius: 15px;
     height: clamp(6.25rem, 18.1vw, 18.75rem);
-    width: fit-content;
+    /* width: fit-content; */
 }
 
 .banner-image {
@@ -234,7 +233,7 @@ nav {
 }
 
 .movie-image {
-    height: clamp(2.7rem, 4vw, 4rem);
+    height: clamp(2.7rem, 4vw, 5rem);
     border-radius: 10px;
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
 }
@@ -259,7 +258,6 @@ nav {
 .photoshop,
 .illustrator,
 .davinci {
-    /* padding: 25px; */
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
@@ -411,13 +409,6 @@ footer {
     }
 }
 
-@media (max-width: 1024px) and (min-width: 430px) {
-    .wraper {
-        justify-content: center;
-        margin: 0 8%;
-    }
-}
-
 @media ( max-width: 320px ) {
     .about-container {
         width: 100%;
@@ -430,6 +421,24 @@ footer {
     }
     .mobile-title-para {
         font-size:  0.6rem;
+    }
+}
+
+@media (min-width: 2560px) {
+    .wraper {
+        height: 150vh;
+    }
+    .hire-me-btn {
+        padding: 20px;
+    }
+    .banner-image-container {
+        height: 100%;
+    }
+    .banner-image {
+        height: 350px;
+    }
+    .icons {
+        height: 30px;
     }
 }
  
