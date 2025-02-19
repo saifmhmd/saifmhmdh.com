@@ -13,8 +13,10 @@ containers.forEach((container, index) => {
     });
 });
 
-const mobileAbout = document.getElementsByClassName("mobile-about");
+document.addEventListener("DOMContentLoaded", function() {
+    const container = document.getElementById("mobile-about");
 
-mobileAbout.addEventListener("click", () => {
-    window.location.href = links[2];
+    container.addEventListener("click", function() {
+        window.location.href = "about.html"; // Change this to your target page
+    });
 });
