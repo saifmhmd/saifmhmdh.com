@@ -12,3 +12,9 @@ containers.forEach((container, index) => {
         window.location.href = links[index];
     });
 });
+
+const mobileAbout = document.querySelector(".mobile-about");
+
+mobileAbout.addEventListener("click", () => {
+    window.location.href = links[2];
+});
