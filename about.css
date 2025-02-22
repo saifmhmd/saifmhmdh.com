@@ -1,0 +1,32 @@
+.about-wraper {
+    margin: 3% 8%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #5D6D7E;
+}
+
+.header-subtitle {
+    color: #5D6D7E;
+    font-size: clamp(0.7rem, 1.6vw, 3.5rem);
+    font-weight: 230;
+    padding-bottom: 15px;
+}
+
+.header-title-para {
+    color: #0B2545;
+    font-size: clamp(0.5rem, 1.1vw, 3rem);
+    font-weight: 230;
+}
+
+.about-image {
+    height: 250px;
+    padding: 20px;
+}
+
+hr {
+    border: 2px solid #ff5733; /* Change to desired color */
+  }

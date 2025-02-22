@@ -400,9 +400,6 @@ footer {
     .social-media-container {
         display: none;
     }
-    .social {
-        /* font-size: 18px; */
-    }
     .mobile-contact {
         display: flex;
     }
@@ -433,6 +430,12 @@ footer {
     }
     .mobile-title-para {
         font-size:  0.6rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .social {
+        font-size: 15px;
     }
 }
 
