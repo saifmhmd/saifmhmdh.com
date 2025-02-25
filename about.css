@@ -1,8 +1,8 @@
-.about-wraper {
+.sub-page-wraper {
     margin: 3% 8%;
 }
 
-.header {
+header {
     display: flex;
     align-items: center;
     justify-content: space-evenly;

@@ -1,0 +1,10 @@
+header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact-image {
+    height: clamp(6.25rem, 18.1vw, 18.75rem);
+    object-fit: cover;
+}

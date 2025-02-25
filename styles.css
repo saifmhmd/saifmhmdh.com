@@ -300,11 +300,6 @@ nav {
     filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
 }
 
-.icons {
-    height: 4vh;
-    width: auto;
-}
-
 footer {
     color: #0B2545;
     padding: 12px;
@@ -407,9 +402,6 @@ footer {
     .contact-container {
         height: 50px;
     }
-    .icons {
-        height: 17px;
-    }
     .copyright-para {
         font-size: 0.6rem;
     }
@@ -435,7 +427,7 @@ footer {
 
 @media (max-width: 425px) {
     .social {
-        font-size: 15px;
+        font-size: 17px;
     }
 }
 
