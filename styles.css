@@ -49,8 +49,9 @@ nav {
     height: clamp(2rem, 3.8vw, 5rem);
 }
 
-.hire-me-btn {
+.send-mail-btn {
     font-size: clamp(0.7rem, 1.2vw, 2.5rem);
+    font-family: "sora", serif;
     background-color: #0B2545;
     color: #f5f5f5;
     padding: 10px 15px;
@@ -341,7 +342,7 @@ footer {
     footer {
         border-radius: 10px;
     }
-    .hire-me-btn {
+    .send-mail-btn {
         border-radius: 7px;
     }
     .grid-container {
@@ -385,7 +386,7 @@ footer {
     .about-container {
         display: none;
     }
-    #mobile-about-about {
+    #mobile-about-container {
         display: flex;
     }
     .social-container,
@@ -431,21 +432,35 @@ footer {
     }
 }
 
-@media (min-width: 2560px) {
+@media (min-width: 1024px) {
     .wraper {
-        height: 150vh;
+        height: auto;
+        margin: 2% 8%;
     }
     .hire-me-btn {
         padding: 20px;
     }
+    .icons {
+        height: 30px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .wraper {
+        margin: 2% 10%;
+    }
+    .send-mail-btn {
+        padding: 1.5rem;
+        border-radius: 15px;
+    }
     .banner-image-container {
+        /* display: flex; */
+        justify-content: center;
+        /* align-items: flex-end; */
         height: 100%;
     }
     .banner-image {
-        height: 350px;
-    }
-    .icons {
-        height: 30px;
+        transform: scale(1);
     }
 }
  

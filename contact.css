@@ -1,10 +1,145 @@
-header {
+.contact-page-title {
+    color: #0B2545;
+    font-size: clamp(1.5rem, 4vw, 8rem);
+}
+
+ul.first {
+    padding-top: 1.2rem;
+}
+
+ul {
+    list-style: none;
+    padding-bottom: 1.5rem;
+}
+
+.social-disk {
     display: flex;
-    justify-content: space-evenly;
+    gap: 5rem;
+}
+
+a {
+    flex: 1;
+    color: #0B2545;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    opacity: 65%;
+}
+
+li {
+    font-size: clamp(0.8rem, 1.2vw, 3.5em);
+    display: flex;
     align-items: center;
 }
 
+i {
+    color: #0B2545;
+    font-size: clamp(1rem, 2.8vw, 3rem);
+    padding-right: 20px;
+}
+
+.mobile-contact-image {
+    display: none;
+}
+
 .contact-image {
-    height: clamp(6.25rem, 18.1vw, 18.75rem);
+    height: clamp(6.25rem, 28vw, 22rem);
     object-fit: cover;
+}
+
+form {
+    padding-top: 2rem;
+}
+
+.form-title {
+    color: #0B2545;
+    font-size: clamp(1rem, 2vw, 3.5rem);
+    font-weight: 300;
+    padding-bottom: 1.2rem;
+}
+
+label {
+    color: #0B2545;
+    font-size: clamp(0.8rem, 1.2vw, 1rem);
+    font-weight: 300;
+}
+
+input {
+    font-size: 1rem;
+    font-family: "sora", serif;
+    line-height: 1.5rem;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #0B2545;
+}
+
+textarea {
+    font-size: 1rem;
+    font-family: "sora", serif;
+    height: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #0B2545;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding-bottom: 1.2rem;
+}
+
+.left-form,
+.right-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-form,
+.right-form {
+    width: 50%;
+}
+
+button {
+    font-size: clamp(0.8rem, 1.2vw, 2rem);
+    padding: 10px;
+    background-color: #0B2545;
+    color: #f5f5f5;
+    border: none;
+    border-radius: 7px;
+    font-family: "sora", serif;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+}
+
+@media (max-width: 900px) {
+    .social-disk {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobile-contact-image {
+        display: block;
+        width: 300px;
+        margin: auto;
+    }
+    .contact-image {
+        display: none;
+    }
+    form {
+        border-top: 1px solid #dddddd;
+    }
+    .form-group {
+        flex-direction: column;
+    }
+    .right-form,
+    .left-form {
+        width: 100%;
+    }
+    textarea {
+        height: 100px;
+    }
 }
