@@ -29,3 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
         window.location.href = "contact.html"; // Change this to your target page
     });
 });
+
+const backBtn = document.getElementById("back-btn");
+
+backBtn.addEventListener("click", function() {
+    window.location.href = "index.html";
+});

@@ -1,6 +1,13 @@
-.contact-page-title {
+#back-btn {
     color: #0B2545;
-    font-size: clamp(1.5rem, 4vw, 8rem);
+    font-size: clamp(1.7rem, 3vw, 3rem);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.back {
+    padding: 0;
+    margin: 0;
 }
 
 ul.first {
@@ -23,7 +30,8 @@ a {
     transition: all 0.3s ease;
 }
 
-a:hover {
+a:hover,
+#back-btn:hover {
     opacity: 65%;
 }
 
@@ -54,7 +62,7 @@ form {
 
 .form-title {
     color: #0B2545;
-    font-size: clamp(1rem, 2vw, 3.5rem);
+    font-size: clamp(1.2rem, 2vw, 3.5rem);
     font-weight: 300;
     padding-bottom: 1.2rem;
 }
@@ -63,29 +71,36 @@ label {
     color: #0B2545;
     font-size: clamp(0.8rem, 1.2vw, 1rem);
     font-weight: 300;
+    padding-bottom: 5px;
 }
 
 input {
+    color: #0B2545;
     font-size: 1rem;
     font-family: "sora", serif;
+    font-weight: 300;
     line-height: 1.5rem;
     padding: 10px;
     border-radius: 7px;
     border: 1px solid #0B2545;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 textarea {
+    color: #0B2545;
     font-size: 1rem;
     font-family: "sora", serif;
+    font-weight: 300;
     height: 100%;
     padding: 10px;
     border-radius: 7px;
     border: 1px solid #0B2545;
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
     display: flex;
-    gap: 10px;
+    gap: 20px;
     justify-content: space-between;
     padding-bottom: 1.2rem;
 }
@@ -110,8 +125,19 @@ button {
     border-radius: 7px;
     font-family: "sora", serif;
     cursor: pointer;
-    display: block;
-    margin-left: auto;
+    /* display: block; */
+    /* margin-left: auto; */
+    transition: all 0.3s ease;
+}
+
+.contact-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+button:hover {
+    opacity: 75%;
 }
 
 @media (max-width: 900px) {
@@ -121,6 +147,21 @@ button {
 }
 
 @media (max-width: 768px) {
+    header {
+        border: none !important;
+    }
+    .title {
+        font-size: 4.5rem !important;
+    }
+    .header-subtitle {
+        font-size: 1.3rem !important;
+    }
+    .social-disk {
+        gap: 8rem;
+    }
+    i {
+        font-size: 2.3rem;
+    }
     .mobile-contact-image {
         display: block;
         width: 300px;
@@ -141,5 +182,33 @@ button {
     }
     textarea {
         height: 100px;
+    }
+}
+
+@media (max-width: 550px) {
+    .title {
+        font-size: 3.7rem !important;
+    }
+    .header-subtitle {
+        font-size: 1rem !important;
+    }
+    i {
+        font-size: 1.8rem;
+    }
+    .social-disk {
+        gap: 4rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .sub-page-wraper {
+        margin: 10% 10% !important;
+    }
+    .mobile-contact-image {
+        width: 250px;
+    }
+    input,
+    textarea {
+        font-size: 0.8rem;
     }
 }
