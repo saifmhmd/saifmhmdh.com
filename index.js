@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-const backBtn = document.getElementById("back-btn");
+const redirectBtn = document.getElementById("redirect-btn");
 
-backBtn.addEventListener("click", function() {
+redirectBtn.addEventListener("click", function() {
     window.location.href = "index.html";
 });
