@@ -201,6 +201,9 @@ button:hover {
 }
 
 @media (max-width: 425px) {
+    header {
+        justify-content: center !important;
+    }
     .sub-page-wraper {
         margin: 10% 10% !important;
     }
