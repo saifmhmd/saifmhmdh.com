@@ -31,8 +31,8 @@ a {
 }
 
 a:hover,
-#back-btn:hover {
-    opacity: 65%;
+#redirect-btn:hover {
+    opacity: 75%;
 }
 
 li {
