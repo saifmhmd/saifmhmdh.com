@@ -78,7 +78,7 @@ input {
     color: #0B2545;
     font-size: 1rem;
     font-family: "sora", serif;
-    font-weight: 300;
+    font-weight: 250;
     line-height: 1.5rem;
     padding: 10px;
     border-radius: 7px;
@@ -90,7 +90,7 @@ textarea {
     color: #0B2545;
     font-size: 1rem;
     font-family: "sora", serif;
-    font-weight: 300;
+    font-weight: 250;
     height: 100%;
     padding: 10px;
     border-radius: 7px;
@@ -209,9 +209,5 @@ button:hover {
     }
     .mobile-contact-image {
         width: 250px;
-    }
-    input,
-    textarea {
-        font-size: 0.8rem;
     }
 }
