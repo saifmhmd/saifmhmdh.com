@@ -1,0 +1,12 @@
+p {
+    font-size: clamp(1.5rem, 2vw, 4rem);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+img {
+    height: clamp(200px, 26vw, 500px);
+}
