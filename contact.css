@@ -209,11 +209,12 @@ button:hover {
 }
 
 @media (max-width: 425px) {
+    .contact-page-wraper {
+        height: auto;
+        margin: 5% 10%;
+    }
     header {
         justify-content: center !important;
-    }
-    .sub-page-wraper {
-        margin: 10% 10% !important;
     }
     .mobile-contact-image {
         width: 250px;
